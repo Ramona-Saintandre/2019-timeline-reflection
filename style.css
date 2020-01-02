@@ -14,7 +14,7 @@ body {
 
    header{
        top:10px;
-       height: 5em;
+       height: 7em;
        display:flex;
        flex-direction: column;
        position: relative;
@@ -24,6 +24,31 @@ body {
        color:rgb(152, 163, 224);
    }
 
+   h1{
+font-family:"Abril",sans-serif ;
+color:rgb(99, 106, 128);
+font-size: 5rem;
+   }
+h2{
+    font-family: "Satisfy",sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(7, 7, 100);
+}
+h3{
+    font-family: "Vidaloka",sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(7, 7, 100);
+}
+li{
+    font-family: "Vidaloka",sans-serif;
+    font-size: 1.2rem; 
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    color:blue;
+}
 
 .timeline-container {
     position: relative;
