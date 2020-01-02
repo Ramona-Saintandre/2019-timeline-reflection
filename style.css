@@ -11,8 +11,7 @@ body {
     background-image: repeating-linear-gradient(rgb(146, 161, 228), rgb(19, 27, 59));  
        }
 
-
-   header{
+   /* header{
        top:10px;
        height: 7em;
        display:flex;
@@ -22,8 +21,46 @@ body {
        align-items: center;
        background-color: rgb(6, 19, 63);
        color:rgb(152, 163, 224);
-   }
+   } */
+section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+section::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(45deg,#ff0081,#6827,#6827b0) ;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  transform: scaleX(1.5);
+}
 
+section .hdr-content{
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+
+}
+section .hdr-content h1{
+  margin:0;
+  padding: 0;
+  color:#fff;
+  font-size:4em;
+}
+section .hdr-content p{
+COLOR:#FFF;
+font-size: 1.2em;
+}
    h1{
 font-family:"Abril",sans-serif ;
 color:rgb(99, 106, 128);
