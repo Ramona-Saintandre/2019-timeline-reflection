@@ -63,14 +63,21 @@ body {
     z-index: 1;
     border:2px solid black;
   }
-   /* Place the container to the right */
-   .right {
-    left: 50%;
-    
-  }
+  
   /* Place the container to the left */
 .left {
     left: 0;
   }
   
- 
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+    
+  }
+  /* Fix the circle for containers on the right side */
+
+.right::after {
+    left: -14px;
+  }
+
+  
