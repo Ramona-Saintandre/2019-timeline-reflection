@@ -6,8 +6,8 @@
 
 body {
     height: 100%;
-    background-color: #f07c7c;
-    background-image: repeating-linear-gradient(rgb(104, 64, 11), rgb(81, 95, 149));  
+    background-color: #121361;
+    background-image: repeating-linear-gradient(rgb(146, 161, 228), rgb(19, 27, 59));  
     
    }
 
@@ -20,7 +20,8 @@ body {
        position: relative;
        text-align: center;
        align-items: center;
-       background-color: rgb(175, 129, 68);
+       background-color: rgb(6, 19, 63);
+       color:rgb(152, 163, 224);
    }
 
 
@@ -80,4 +81,50 @@ body {
     left: -14px;
   }
 
+  /* The actual content */
+.contents {
+    padding: 20px 30px;
+    background-color: #10114b;
+    background-image: repeating-linear-gradient(rgb(223, 210, 193), rgb(127, 151, 231)); box-shadow: 3px 3px 5px  #174286;
+    position: relative;
+    border-radius: 6px;
+    border: 2px solid rgb(13, 11, 107);
+  }
+
+  /* image container */
+
+  #imgbox {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+ /* The actual content */
+  #image-content {
+    padding: 20px 30px;
+    background-color: #10114b;
+    background-image: repeating-linear-gradient(rgb(223, 210, 193), rgb(127, 151, 231)); box-shadow: 3px 3px 5px  #174286;
+    position: relative;
+    border-radius: 6px;
+    border: 2px solid rgb(13, 11, 107);
+  }
+  img{
+     height:100% ;
+     width:100%;
+     
+  }
+   /* Place the container to the left */
+.left-imgbox {
+    left: 50%;
+  }
   
+  /* Place the container to the right */
+  .right-imgbox {
+    left: 0;
+    
+  }
+  /* Fix the circle for containers on the right side */
+
+.right-imgbox::after {
+    left: -14px;
+  }
