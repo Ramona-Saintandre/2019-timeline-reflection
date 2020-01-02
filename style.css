@@ -7,23 +7,39 @@
 body {
     height: 100%;
     background-color: #f07c7c;
-    background-image: repeating-linear-gradient(rgb(104, 64, 11), rgb(81, 95, 149));
-  
-     
+    background-image: repeating-linear-gradient(rgb(104, 64, 11), rgb(81, 95, 149));  
     
-}
-.timeline-bg{
+   }
+#container-bg{
     background: url("/images/stillonajourney.jpg") no-repeat center fixed;
-    background-size: contain;   
-   
+    background-size: cover;
 }
+
+   header{
+       top:10px;
+       height: 5em;
+       display:flex;
+       flex-direction: column;
+       position: relative;
+       text-align: center;
+       align-items: center;
+       background-color: rgb(175, 129, 68);
+   }
+
+/* .timeline-bg{
+    background: url("/images/stillonajourney.jpg") no-repeat center fixed;
+    background-size: cover;   
+   
+} */
 /* timeline ruler */
-#timeline {
+.timeline-container {
     position: relative;
     max-width: 1200px;
+    max-height: 1500px;
     margin: 0 auto;
+    top: 1.5em;
 }
-#timeline::after{
+.timeline-container::after{
     content:'';
     position: absolute;
     width: 6px;
@@ -33,3 +49,35 @@ body {
     left: 50%;
     margin-left: -3px;
 }
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+   /* Place the container to the right */
+   .right {
+    left: 50%;
+  }
+  /* Place the container to the left */
+.left {
+    left: 0;
+  }
+  
+ 
