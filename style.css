@@ -2,14 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 body {
     height: 100%;
     background-color: #121361;
     background-image: repeating-linear-gradient(rgb(146, 161, 228), rgb(19, 27, 59));  
-    
-   }
+       }
 
 
    header{
