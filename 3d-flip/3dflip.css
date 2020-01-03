@@ -53,3 +53,9 @@ body{
 .card:hover .face.back{
     transform: perspective(500px) rotateY(360deg);  
 }
+
+.card .face h2{
+    font-size: 4em;
+    text-transform: uppercase;
+    transform: perspective(500px) translateZ(50px);
+}
