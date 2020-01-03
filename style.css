@@ -22,6 +22,7 @@ body {
        background-color: rgb(6, 19, 63);
        color:rgb(152, 163, 224);
    } */
+   /* header */
 section {
   position: relative;
   width: 100%;
@@ -61,6 +62,8 @@ section .hdr-content p{
 COLOR:rgb(22, 18, 80);
 font-size: 1.2em;
 }
+/* header closing */
+
    h1{
 font-family:"Abril",sans-serif ;
 color:rgb(99, 106, 128);
@@ -86,7 +89,7 @@ li{
     text-align: center;
     color:blue;
 }
-
+/* timeline in the middle of the page  */
 .timeline-container {
     position: relative;
     max-width: 1200px;    
@@ -153,40 +156,43 @@ li{
     border: 2px solid rgb(13, 11, 107);
   }
 
+
+
+
   /* image container */
 
-  #imgbox {
+  /* #imgbox {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
   }
  /* The actual content */
-  #image-content {
+  /* #image-content {
     padding: 20px 30px;
     background-color: #10114b;
     background-image: repeating-linear-gradient(rgb(223, 210, 193), rgb(127, 151, 231)); box-shadow: 3px 3px 5px  #174286;
     position: relative;
     border-radius: 6px;
     border: 2px solid rgb(13, 11, 107);
-  }
-  img{
+  } */
+  /* img{
      height:100% ;
      width:100%;
      
-  }
+  } */
    /* Place the container to the left */
-.left-imgbox {
+/* .left-imgbox {
     left: 50%;
-  }
+  } */
   
   /* Place the container to the right */
-  .right-imgbox {
+  /* .right-imgbox {
     left: 0;
     
-  }
+  } */
   /* Fix the circle for containers on the right side */
 
-.right-imgbox::after {
+/* .right-imgbox::after {
     left: -14px;
-  }
+  }  */
