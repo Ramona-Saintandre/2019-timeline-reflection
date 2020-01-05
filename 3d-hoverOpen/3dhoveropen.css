@@ -4,18 +4,18 @@ body{
     background: rgb(58, 156, 127);
 }
 .card{
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
     position: absolute; 
-    width: 300px;
-    height: 400px; 
-    background: #fff;
+    top: 50%;
+    left:50%;      
+    width: 450px;
+    height: 300px; 
+    background: rgb(171, 186, 202);
     transform-style: preserve-3d;
     transform: translate(-50%,-50%) perspective(2000px);
     box-shadow: inset 300px 0 50px rgba(33, 52, 109, 0.5), 0 20px 100px rgba(5, 45, 177, 0.5);
-    transition:1s;
+    transition:2s;
 }
-.cover:hover{
+.card:hover {
     transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(6, 46, 167, 0.5), 0 30px 100px rgba(5, 45, 177, 0.5);
 }
