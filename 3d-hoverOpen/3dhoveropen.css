@@ -1,7 +1,9 @@
+
 body{
     margin: 0;
     padding: 0;
     background: rgb(58, 156, 127);
+    /* need to add font family here */
 }
 .card{
     position: absolute; 
@@ -49,7 +51,8 @@ body{
     height: 100%;
     position: relative;
     transform-origin:left ;
-    transition:1s;
+    z-index: 1;
+    transition:1s cubic-bezier(.15,1.06,.84,.59) ;
 }
 .card:hover .imgBox{
     transform: rotateY(-135deg);
