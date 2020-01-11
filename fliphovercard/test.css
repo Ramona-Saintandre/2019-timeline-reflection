@@ -176,7 +176,7 @@ li{
      
   }
    /* Place the container to the left */
-.left-imgbox {
+ /* .left-imgbox {
     left: 50%;
   }
   
@@ -184,9 +184,81 @@ li{
   .right-imgbox {
     left: 0;
     
-  }
+  } */
   /* Fix the circle for containers on the right side */
 
-.right-imgbox::after {
+.imgbox::after {
+    left: -14px;
+  }
+  
+
+.right-card{
+    position: absolute; 
+    top: 50%;
+    left:50%;      
+    width: 400px;
+    height: 300px; 
+    background: rgb(171, 186, 202);
+    transform-style: preserve-3d;
+    transform: translate(-50%,-50%) perspective(2000px);
+    box-shadow: inset 300px 0 50px rgba(33, 52, 109, 0.5), 0 20px 100px rgba(5, 45, 177, 0.5);
+    transition:2s;
+}
+.right-card:hover {
+    transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(6, 46, 167, 0.5), 0 30px 100px rgba(5, 45, 177, 0.5);
+}
+
+.right-card:before{
+    content:'';
+    position: absolute; 
+    top:-5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #182352;
+    transform-origin: bottom;
+    transform:skewX(-45deg);
+
+
+}
+.right-card:after{
+    content: '';
+    position: absolute;
+    top:-5px;
+    right: -5;
+    width: 5px;
+    height: 100%;
+    background: #295097;
+    transform-origin:left ;
+    transform:skewY(-45deg);
+}
+.right-card .right-imgBox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin:left ;
+    z-index: 1;
+    transition:1s cubic-bezier(.15,1.06,.84,.59) ;
+}
+.right-card:hover .right-imgBox{
+    transform: rotateY(-135deg);
+}
+.right-card .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: -1;
+}
+ /* Place the container to the right */
+  .right-imgbox {
+    left: 0;
+    
+  } */
+  /* Fix the circle for containers on the right side */
+
+.imgbox::after {
     left: -14px;
   }
