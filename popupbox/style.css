@@ -62,5 +62,24 @@ box-sizing: border-box;
     width: 100%;
     bottom: 0;
     left: 0;
+
+}
+.box .content h3{
+margin: 0;
+padding: 0;
+font-size: 20px;
+text-align: center;
+}
+.box .content p{
+    margin: 10px 0 0 ;
+    padding: 0;
+    opacity: 0;
+    transition: 0,5s;
+    text-align: justify;
+
+}
+.box:hover .content p{
+    opacity: 1; 
+    transition-delay:0.5s ;
     
 }
