@@ -46,7 +46,6 @@ section .hdr-cont {
 section .hdr-cont h1 {
   margin: 0;
   padding: 0;
-  /* padding-bottom: 120px; */
   color: rgb(46, 58, 161);
   font-size: 4em;
 }
@@ -145,58 +144,8 @@ li {
   left: -14px;
 }
 
-/* The actual content */
-.contents {
-  padding: 20px 30px;
-  background-color: #10114b;
-  background-image: repeating-linear-gradient(rgb(223, 210, 193), rgb(127, 151, 231));
-  box-shadow: 3px 3px 5px #174286;
-  position: relative;
-  border-radius: 6px;
-  border: 2px solid rgb(13, 11, 107);
-}
 
-/* image container */
-
-#imgbox {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The actual content */
-/* #image-content {
-    padding: 20px 30px;
-    background-color: #10114b;
-    background-image: repeating-linear-gradient(rgb(223, 210, 193), rgb(127, 151, 231)); box-shadow: 3px 3px 5px  #174286;
-    position: relative;
-    border-radius: 6px;
-    border: 2px solid rgb(13, 11, 107);
-  } */
-/* img{
-     height:100% ;
-     width:100%;
-     
-  } */
-/* Place the container to the left */
-.left-imgbox {
-  left: 50%;
-}
-
-/* Place the container to the right */
-/* .right-imgbox {
-    left: 0;
-    
-  } */
-/* Fix the circle for containers on the right side */
-
-/* .right-imgbox::after {
-    left: -14px;
-  } */
-
-
-  /* configuring the box popup */
+/* configuring the box popup */
 .box {
   position: relative;
   width: 550px;
@@ -224,60 +173,60 @@ li {
   height: 100%;
   object-fit: cover;
   transition: 0.5s;
-  
+
 }
 
 .box:hover .imgBox img {
   opacity: 0;
 
 }
-.box .content{
+
+.box .content {
   position: absolute;
   bottom: 1px;
-  left: 10%;  
+  left: 10%;
 
   width: 80%;
   height: 60px;
   background: rgb(131, 136, 216);
   transition: 0.5s;
-  overflow:hidden;
-  /* padding: 5px; */
+  overflow: hidden;
   box-sizing: border-box;
   border-radius: 10px;
   opacity: .7;
-  }
-
-  .box:hover .content{
-    height: 100%;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-  
-
 }
 
-.box .content h3{
-margin: 0;
-padding: 0 ;
-font-size: 25px;
-text-align: center;
+.box:hover .content {
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
-.box .content h2{
+
+.box .content h3 {
   margin: 0;
-  padding: 0 ;
+  padding: 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+.box .content h2 {
+  margin: 0;
+  padding: 0;
   font-size: 45px;
   text-align: center;
-  }
-.box .content p{
-  margin: 3px 10px 0 7px  ;
+}
+
+.box .content p {
+  margin: 3px 10px 0 7px;
   padding: 0;
   opacity: 0;
   /* transition: 0,5s; */
   text-align: justify;
-
 }
-.box:hover .content p{
-  opacity: 1; 
-  transition-delay:0.5s ;
-  
+
+.box:hover .content p {
+  opacity: 1;
+  transition-delay: 0.5s;
+
 }
