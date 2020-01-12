@@ -52,7 +52,8 @@ section .hdr-cont h1 {
 section .hdr-cont p {
   COLOR: rgb(22, 18, 80);
   padding-bottom: 60px;
-  font-size: 1.2em;
+  font-size: 2em;
+  font-family: 'Satify',sans-serif;
   text-align: center;
 }
 
