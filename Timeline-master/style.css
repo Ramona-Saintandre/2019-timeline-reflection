@@ -110,6 +110,7 @@ li{
     position: relative;
     background-color: inherit;
     width: 50%;
+    display: flex;
   }
   
   /* The circles on the timeline */
@@ -190,3 +191,10 @@ li{
 .right-imgbox::after {
     left: -14px;
   }
+  .box{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background: #000;
+    box-shadow:0 30px 30px rgba(0,0,0,.5 green, blue, alpha) ;
+}
