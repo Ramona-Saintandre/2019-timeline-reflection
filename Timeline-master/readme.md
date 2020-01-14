@@ -115,3 +115,10 @@
 CSS Responsive Card Hover Effects | Html5 & CSS3
 ```</font>](https://www.youtube.com/watch?v=Vcay_PG2-DM)
 
+##Javascript resources
+
+[Vertical timeline](https://codepen.io/savalazic/pen/QKwERN)
+[Vertical timeline with JS](https://codepen.io/EleftheriaBatsou/pen/vgvXQK)
+
+##Timeline examples
+
