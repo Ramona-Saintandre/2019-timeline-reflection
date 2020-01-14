@@ -243,6 +243,7 @@ li {
 }
 
 /* media queries */
+/* https://webdesign.tutsplus.com/tutorials/building-a-vertical-timeline-with-css-and-a-touch-of-javascript--cms-26528 | https://www.cssscript.com/mobile-vertical-timeline/ | https://www.4codev.com/css/create-a-responsive-timeline-with-html-and-css-idpx3358895601923312551.html */
 @media(max-width:667px) {
   .timeline-container {
     width: 100%;
