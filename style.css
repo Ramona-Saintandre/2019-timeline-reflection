@@ -240,4 +240,156 @@ li {
   color: rgb(36, 36, 126);
 
 }
+/* media queries */
+@media(max-width:400px) {
+  .timeline-container {
+    width: 100%;
+  }
 
+  .timeline-container::after {
+  left:31px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+  section {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  section .hdr-cont h1 {
+    margin-top:0;
+    padding: 0;
+    color: rgb(46, 58, 161);
+    font-size: 15px;
+    
+  }
+
+  section .hdr-cont p {
+    COLOR: rgb(22, 18, 80);
+    padding-bottom: 60px;
+    font-size: .5em;
+    font-family: 'Satify', sans-serif;
+    text-align: center;
+  }
+
+  /* .box {
+    position: relative;
+    width: 100vw;
+    height: 350px;
+    background: #000;
+    box-shadow: 6px 10px 20px #0d3069;
+    border: 3px solid rgb(11, 221, 74);
+    border-radius: 8px;
+    border-style: inset;
+  }
+
+  .box .imgBox {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  } */
+  .box {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    background: #000;
+    box-shadow: 6px 10px 20px #0d3069;
+    border: 3px solid rgb(13, 11, 107);
+    border-radius: 8px;
+    border-style: inset;
+  } 
+  
+  
+  .box .imgBox img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 190px;
+    object-fit: cover;
+    transition: 0.3s;
+  
+  }
+  
+  .box:hover .imgBox img {
+    opacity: 0;
+  
+  }
+  
+  .box .content {
+    position: absolute;
+    bottom: 1px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: rgb(131, 136, 216);
+    transition: 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: .7;
+  }
+  
+  .box:hover .content {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .box .content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .box .content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+    text-align: center;
+  }
+  
+  .box .content p {
+    margin: 3px 10px 0 7px;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: justify;
+    text-align: center;
+    font-size:1em;
+  }
+  
+  
+  .box:hover .content p {
+    opacity: 1;
+    transition-delay: 0.5s;
+    font-family: "Vidaloka", sans-serif;
+    font-size: 1.2rem; 
+    text-align: center;
+    color: rgb(36, 36, 126);
+  
+  }
+/* https://www.w3schools.com/howto/howto_css_timeline.asp */
